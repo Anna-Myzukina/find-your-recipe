@@ -19,6 +19,13 @@ export default () => (
         >
           View Recipes
         </Link>
+        <Link
+          to="/recipes"
+          className="btn btn-lg custom-button"
+          role="button"
+        >
+          Add to Favourites
+        </Link>
         <hr className="my-4" />
         
        <div className="container d-flex">
