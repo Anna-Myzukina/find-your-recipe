@@ -1,16 +1,51 @@
 # This file should contain all the record creation needed to seed the database with its default values.
 # The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
 
-9.times do |i|
-    Recipe.create(
-      name: "Recipe #{i + 1}",
-      ingredients: '227g tub clotted cream, 25g butter, 1 tsp cornflour,100g parmesan, grated nutmeg, 250g fresh fettuccine or tagliatelle, snipped chives or chopped parsley to serve (optional)',
-      calories: 350,
-      description: 'In a medium saucepan, stir the clotted cream, butter, and cornflour over a low-ish heat and bring to a low simmer. Turn off the heat and keep warm.'
-    )
-  end
+
+recipes = Recipe.create([
+  {
+      name: "Recipe 1",
+      ingredients: "test 1",
+      description: "description test 1",
+      image: "https://images.pexels.com/photos/3296644/pexels-photo-3296644.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+      calories: 350
+  },
+  {
+    name: "Recipe 2",
+    ingredients: "test 2, test 2, test 3",
+    description: "description 2",
+    image: "https://images.pexels.com/photos/1410235/pexels-photo-1410235.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+    calories: 350
+  },
+  {
+    name: "Recipe 3",
+    ingredients: "test 3",
+    description: "description test 3",
+    image: "https://images.pexels.com/photos/357573/pexels-photo-357573.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+    calories: 350
+  },
+  {
+    name: "Recipe 4",
+    ingredients: "test 4",
+    description: "description test 4",
+    image: "https://images.pexels.com/photos/315755/pexels-photo-315755.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+    calories: 350
+  }
+])
+
+favourites = Favourite.create([
+  {
+    title: 'Microgreen',
+    description: 'Lorem ipsum sed loran',
+    score: 5,
+    recipe: recipes.first
+  },
+  {
+    title: 'Pizza',
+    description: 'Lorem ipsum sed loran',
+    score: 1,
+    recipe: recipes.first
+  }
+])
+
+

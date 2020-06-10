@@ -24,7 +24,7 @@ export default () => (
           className="btn btn-lg custom-button"
           role="button"
         >
-          Add to Favourites
+          View Recipes
         </Link>
         <hr className="my-4" />
         
