@@ -4,9 +4,11 @@
 
 recipes = Recipe.create([
   {
-      name: "Recipe 1",
-      ingredients: "test 1",
-      description: "description test 1",
+      name: "Pizza with mashroomes",
+      ingredients: "1 tablespoon olive oil, 8 ounces mushrooms, 1/2 medium red onion, 2 cloves garlic, 1 cup marinara sauce, ",
+      description: "Preheat the oven to 450 degrees F.
+      Heat the oil in a skillet over a medium heat. Add the mushrooms and onions and cook until tender and most of the liquid evaporates, about 5 minutes. Stir in the garlic and remove from the heat.
+      Place the pizza crust on a baking sheet. Spread the sauce over the crust leaving a 1-inch border. Top with the mushroom mixture and sun-dried tomatoes. Sprinkle with the mozzarella and Parmesan cheeses. Bake until the crust is crisp and the cheese is nicely melted, about 13 minutes. Sprinkle with basil, cut into 8 slices and serve.",
       image: "https://images.pexels.com/photos/3296644/pexels-photo-3296644.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
       calories: 350
   },
