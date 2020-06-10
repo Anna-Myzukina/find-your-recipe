@@ -1,16 +1,58 @@
 # This file should contain all the record creation needed to seed the database with its default values.
 # The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
 #
-# Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
+recipes = Recipe.create([
+  {
+    name: "Fish with cheese",
+    ingredients: "lorem, lorem, lorem, lorem",
+    description: "Lorem ipsum sed",
+    image: "https://images.pexels.com/photos/704569/pexels-photo-704569.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+    calories: 130
+  },
+  {
+    name: "Fish with cheese",
+    ingredients: "lorem, lorem, lorem, lorem",
+    description: "Lorem ipsum sed",
+    image: "https://images.pexels.com/photos/315755/pexels-photo-315755.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+    calories: 354
+  },
+  {
+    name: "Fish with cheese",
+    ingredients: "lorem, lorem, lorem, lorem",
+    description: "Lorem ipsum sed",
+    image: "https://images.pexels.com/photos/357573/pexels-photo-357573.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+    calories: 567
+  },
+  name: "Fish with cheese",
+  ingredients: "lorem, lorem, lorem, lorem",
+  description: "Lorem ipsum sed",
+  image: "https://images.pexels.com/photos/1633525/pexels-photo-1633525.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+  calories: 274
+])
 
-9.times do |i|
-    Recipe.create(
-      name: "Recipe #{i + 1}",
-      ingredients: '227g tub clotted cream, 25g butter, 1 tsp cornflour,100g parmesan, grated nutmeg, 250g fresh fettuccine or tagliatelle, snipped chives or chopped parsley to serve (optional)',
-      calories: 350,
-      description: 'In a medium saucepan, stir the clotted cream, butter, and cornflour over a low-ish heat and bring to a low simmer. Turn off the heat and keep warm.'
-    )
-  end
+favourite = Favourite.create([
+  {
+    title: "Very ggod recipe",
+    description: "Easy to cook and delisious",
+    score: 1,
+    recipe: recipes[0]
+  },
+  {
+    title: "Not bad recipe",
+    description: "Easy to cook",
+    score: 2,
+    recipe: recipes[1]
+  },
+  {
+    title: "Bad recipe",
+    description: "Not easy to cook",
+    score: 3,
+    recipe: recipes[2]
+  },
+  {
+    title: "Horrible recipe",
+    description: "Hard to cook and not delisious",
+    score: 4,
+    recipe: recipes[3]
+  },
+])
