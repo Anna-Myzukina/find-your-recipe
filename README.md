@@ -42,9 +42,6 @@ $ rails db:create
 $  yarn add react-router-dom bootstrap jquery popper.js
 ```
 
-- [ ] 
-
-
 
 
 ## Features
